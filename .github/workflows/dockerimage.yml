@@ -18,8 +18,8 @@ jobs:
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Build the versioned and the latest Docker image
-      run: docker build . -t raonigabriel/theia-java::${{steps.vars.outputs.tag}} -t raonigabriel/theia-java:latest
+      run: docker build . -t raonigabriel/theia-java:${{steps.vars.outputs.tag}} -t raonigabriel/theia-java:latest
     - name: Push the versioned Docker image
-      run: docker push raonigabriel/theia-java::${{steps.vars.outputs.tag}}
+      run: docker push raonigabriel/theia-java:${{steps.vars.outputs.tag}}
     - name: Push the latest Docker image
       run: docker push raonigabriel/theia-java:latest  
