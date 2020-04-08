@@ -23,7 +23,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN ln -s "${MAVEN_HOME}/bin/mvn" /usr/bin/mvn && \
     ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle && \
     apt-get update && \
-    apt-get install -y python python-pip build-essential gnupg git nano curl apt-transport-https unzip wget && \
+    apt-get install -y python build-essential gnupg git nano curl apt-transport-https unzip wget && \
     rm -rf /var/lib/apt/lists/*
 
 RUN adduser --disabled-password --gecos '' theia
