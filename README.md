@@ -12,5 +12,5 @@ A custom Docker image containing the theia-ide for Java development
 ## Usage
 ```
 $ docker volume create theia_workspaces
-$ docker run -d --name theia-java --restart=unless-stopped --init -p 80:3000 -v theia_workspaces:/home/workspaces raonigabriel/theia-java
+$ docker run -d --name theia-java --restart=unless-stopped --init -p 80:3000 -p 8080:8080 -v theia_data:/home/project raonigabriel/theia-java
 ```
