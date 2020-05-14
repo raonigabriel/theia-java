@@ -89,6 +89,7 @@
         "vscode-builtin-theme-solarized-dark": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-solarized-dark-1.39.1-prel.vsix",
         "vscode-builtin-theme-tomorrow-night-blue": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-tomorrow-night-blue-1.39.1-prel.vsix",
         "vscode-builtin-typescript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/typescript-1.39.1-prel.vsix",
+        "vscode-builtin-typescript-language-features": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/typescript-language-features-1.39.1-prel.vsix",
         "vscode-builtin-vb": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/vb-1.39.1-prel.vsix",
         "vscode-builtin-icon-theme-seti": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/vscode-theme-seti-1.39.1-prel.vsix",
         "vscode-builtin-xml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/xml-1.39.1-prel.vsix",
