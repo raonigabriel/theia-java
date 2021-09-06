@@ -48,8 +48,11 @@ In case you decide to do so, keep in mind that you will also need to forward the
 * /home/theia/.m2
 * /home/theia/.graddle
 
-You could bind mount those, maybe to use the host maven jar cache, or to use a custom settings.xml. 
-Just pay attention to the files ownerships: theia runs as UID 1000 inside the container. 
+
+You could bind mount those, maybe to use the host maven jar cache, or to use a custom settings.xml.
+
+Just pay attention to the files ownerships: theia runs as **UID 1000** inside the container. 
+
 ---
 ## Customization (create your own image / inheritance)
 
