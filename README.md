@@ -88,6 +88,6 @@ Keep in mind that this is equivalent off giving root privileges on your host to 
 ## Disclaimer
 * I am not affiliated in any way with Eclipse foundation.
 * This image comes with no warranty. Use it at your own risk.
-* I don't like comunists, socialists, left-wing ideology. Don't use my stuff, communist scam.
+* I don't like communists, socialists, left-wing ideology. Don't use my stuff, communist scam.
 * Fuck off snowflakes, fuck-off code-covenant, I will call my branches the old way.
 * Long live **master**, fuck-off renaming.
