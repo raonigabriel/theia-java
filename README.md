@@ -11,7 +11,6 @@ Therefore, I decided to revamp this project to update it, improve security and f
 
 ---
 ## Features
-* Multi arch: x64 or arm64
 * Based on Alpine 3.14 / node 12.22.6 / yarn 1.22.5
 * Includes OpenJDK 11, Maven 3.6.3 and Gradle 6.8.1
 * Rellative small footprint: ~ 800 MB
