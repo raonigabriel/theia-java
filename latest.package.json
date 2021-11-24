@@ -1,0 +1,68 @@
+{
+    "private": true,
+    "theia": {
+        "frontend": {
+            "config": {
+                "applicationName": "Theia Java",
+                "preferences": {
+                    "files.enableTrash": false
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "@theia/callhierarchy": "latest",
+        "@theia/console": "latest",
+        "@theia/core": "latest",
+        "@theia/debug": "latest",
+        "@theia/editor": "latest",
+        "@theia/editor-preview": "latest",
+        "@theia/file-search": "latest",
+        "@theia/filesystem": "latest",
+        "@theia/getting-started": "latest",
+        "@theia/git": "latest",
+        "@theia/keymaps": "latest",
+        "@theia/markers": "latest",
+        "@theia/messages": "latest",
+        "@theia/metrics": "latest",
+        "@theia/mini-browser": "latest",
+        "@theia/monaco": "latest",
+        "@theia/navigator": "latest",
+        "@theia/outline-view": "latest",
+        "@theia/output": "latest",
+        "@theia/plugin": "latest",
+        "@theia/plugin-ext": "latest",
+        "@theia/plugin-ext-vscode": "latest",
+        "@theia/preferences": "latest",
+        "@theia/preview": "latest",
+        "@theia/process": "latest",
+        "@theia/scm": "latest",
+        "@theia/search-in-workspace": "latest",
+        "@theia/task": "latest",
+        "@theia/terminal": "latest",
+        "@theia/typehierarchy": "latest",
+        "@theia/userstorage": "latest",
+        "@theia/variable-resolver": "latest",
+        "@theia/vsx-registry": "latest",
+        "@theia/workspace": "latest"
+    },
+    "devDependencies": {
+        "@theia/cli": "latest"
+    },
+    "scripts": {
+        "preinstall": "node-gyp install"
+    },
+    "theiaPluginsDir": "plugins",
+    "theiaPlugins": {
+        "builtin-extension-pack" : "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.62.3/file/eclipse-theia.builtin-extension-pack-1.62.3.vsix",
+        "vscode-editorconfig": "https://github.com/theia-ide/editorconfig-vscode/releases/download/v0.14.4/EditorConfig-0.14.4.vsix",
+        "vscode-eslint": "https://github.com/theia-ide/vscode-eslint/releases/download/release%2F2.0.15/vscode-eslint-2.0.15.vsix",
+        "redhat.java": "docker logs -f --tail 100 bitplaces-dev_cron-lbm_1",
+        "vscjava.vscode-maven" : "https://open-vsx.org/api/vscjava/vscode-maven/0.21.2/file/vscjava.vscode-maven-0.21.2.vsix",
+        "vscjava.vscode-java-dependency": "https://open-vsx.org/api/vscjava/vscode-java-dependency/0.18.6/file/vscjava.vscode-java-dependency-0.18.8.vsix",
+        "vscjava.vscode-java-debug": "https://open-vsx.org/api/vscjava/vscode-java-debug/0.34.0/file/vscjava.vscode-java-debug-0.37.0.vsix",
+        "vscjava.vscode-java-test" : "https://open-vsx.org/api/vscjava/vscode-java-test/0.31.2/file/vscjava.vscode-java-test-0.32.0.vsix",
+        "richardwillis.vscode-gradle" : "https://open-vsx.org/api/richardwillis/vscode-gradle/3.6.1/file/richardwillis.vscode-gradle-3.6.1.vsix",
+        "Pivotal.vscode-spring-boot": "https://open-vsx.org/api/Pivotal/vscode-spring-boot/1.27.0/file/Pivotal.vscode-spring-boot-1.28.0.vsix"
+    }
+}
