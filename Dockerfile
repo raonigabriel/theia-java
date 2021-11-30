@@ -38,8 +38,9 @@ RUN addgroup theia && \
     adduser -G theia -s /bin/sh -D theia && \
     chmod g+rw /home && \
 # Setup folders
-    mkdir -p /home/theia/project && \
+    mkdir -p /home/theia/workspace && \
     mkdir -p /home/theia/.m2 && \
+    mkdir -p /home/theia/.theia && \
     mkdir -p /home/theia/.gradle && \    
     chown -R theia:theia /home/theia && \
 # Configure a nice terminal
@@ -47,13 +48,20 @@ RUN addgroup theia && \
 # Fake poweroff (stops the container from the inside by sending SIGHUP to PID 1)
     echo "alias poweroff='kill -1 1'" >> /home/theia/.bashrc && \
 # Setup Path
-    echo "export PATH='$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH'" >> /home/theia/.bashrc
+    echo "export PATH='$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH'" >> /home/theia/.bashrc && \
+# Setup an initial workspace
+    echo '{"recentRoots":["file:///home/theia/workspace"]}' > /home/theia/.theia/recentworkspace.json && \
+# Setup settings (file icons theme)
+    echo '{"workbench.iconTheme": "vs-seti"}' > /home/theia/.theia/settings.json
 
 # Copy files from previous stage 
 COPY --from=0 --chown=theia:theia /home/theia /home/theia
+
+# Use tini 
+ENTRYPOINT ["/sbin/tini", "--"]
 
 # Running environment
 EXPOSE 3030
 WORKDIR /home/theia
 USER theia
-CMD [ "node", "/home/theia/src-gen/backend/main.js", "/home/theia/project", "--hostname=0.0.0.0", "--port=3030" ]
+CMD [ "node", "/home/theia/src-gen/backend/main.js", "--hostname=0.0.0.0", "--port=3030" ]
